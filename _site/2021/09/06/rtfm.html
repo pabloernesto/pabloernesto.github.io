@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Stop telling people to ‘Read the Fucking Manual’ | Pabladas de Pablo</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Stop telling people to ‘Read the Fucking Manual’" />
+<meta name="author" content="Pablo Repetto" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The problem Googling a problem often returns a forum thread that runs like so:" />
+<meta property="og:description" content="The problem Googling a problem often returns a forum thread that runs like so:" />
+<link rel="canonical" href="http://0.0.0.0:4000/2021/09/06/rtfm.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/2021/09/06/rtfm.html" />
+<meta property="og:site_name" content="Pabladas de Pablo" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-09-06T00:00:00-03:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Stop telling people to ‘Read the Fucking Manual’" />
+<script type="application/ld+json">
+{"datePublished":"2021-09-06T00:00:00-03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/2021/09/06/rtfm.html"},"description":"The problem Googling a problem often returns a forum thread that runs like so:","dateModified":"2021-09-06T00:00:00-03:00","url":"http://0.0.0.0:4000/2021/09/06/rtfm.html","author":{"@type":"Person","name":"Pablo Repetto"},"headline":"Stop telling people to ‘Read the Fucking Manual’","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Pabladas de Pablo" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/">Pabladas de Pablo</a>
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Stop telling people to &#39;Read the Fucking Manual&#39;</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2021-09-06T00:00:00-03:00" itemprop="datePublished">2021-09-06
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="the-problem">The problem</h1>
+<p>Googling a problem often returns a forum thread that runs like so:</p>
+
+<blockquote>
+  <p>Original Poster: I have this problem.<br />
+First Responder: This is in the manual. Why can’t you just read the manual?</p>
+</blockquote>
+
+<p>I’m usually quite annoyed at First Responder, because <em>I</em> have the same problem as OP, and First Responder <em>isn’t helping</em>.
+I find this extra annoying because I do read the manual first, and I had to go online for the answer too.
+The answer First Responder should be getting is: <em>because the manual is huge and badly written</em>.</p>
+
+<p>Now I must admit that “badly” is an imprecise term.
+<code class="language-plaintext highlighter-rouge">man</code> pages are usually concise, thorough, and nicely formatted.
+These are not hallmarks of <em>bad</em> writing.</p>
+
+<p>The problem is that software manuals are commonly written as <em>references</em>, not as <em>explanations</em>.</p>
+
+<p>A reference is meant to be searchable above all things.
+Ideas are organized alphabetically, and broken into broad categories if you are lucky.</p>
+
+<p>An explanation, on the other hand, is meant to build layers of understanding.
+Concepts are placed such that sections build upon each other, and the reader is never left saying “you’ve used a lot of big words there, and I have no idea what any of them mean”.</p>
+
+<h1 id="case-study-the-arch-package-manager">Case study: the Arch Package Manager</h1>
+
+<p>For instance, the Arch Linux package manager (pacman) is documented in three different places:</p>
+<ol>
+  <li>the commandline help, accesible through <code class="language-plaintext highlighter-rouge">pacman -h</code></li>
+  <li>the <code class="language-plaintext highlighter-rouge">pacman(8)</code> man page</li>
+  <li>the <a href="https://wiki.archlinux.org/title/Pacman">Arch wiki, pacman</a> page</li>
+</ol>
+
+<p>The commandline help is a terse list of supported operations and one-line descriptions of options.</p>
+
+<p>The man page obeys the same structure, but it provides a full paragraph of explanation for each item, and it documents pacman’s configuration file.</p>
+
+<p>The wiki page is a living source of documentation, meant to be read roughly top-to-bottom.
+It is split into four headers: Usage, Configuration, Troubleshooting, and See also.
+It should speak volumes that the Usage section starts by disclaiming that this is not a comprehensive resource, that the manual page <em>is</em>, points to an online copy of the manual page, and immediately after <em>explains what a package is</em>.</p>
+
+<p>Annoyingly, the commandline help does not mention the existence of the man page, which in turn does not mention the existence of the wiki page.
+The reverse is true, which is better than nothing, but is still inadequate.</p>
+
+<h1 id="why-is-this-a-thing">Why is this a thing?</h1>
+<p>The rationale for this state of affairs is obvious enough: the man page tells you about the commandline help <em>because it can guarantee it exists</em>.
+As long as pacman is installed, you will have access to the commandline help.</p>
+
+<p>The reverse is not true.
+It is perfectly possible to have pacman installed without its man pages, or even the <code class="language-plaintext highlighter-rouge">man</code> utility at all.
+This goes doubly so for the wiki page: nothing you can do from your computer can guarantee an online resource will be available.
+Thus, since it can make no guarantees, <code class="language-plaintext highlighter-rouge">pacman -h</code> stays silent about the other docs.</p>
+
+<p>While this reasoning does makes sense, it is <em>absolutely backwards</em> from a usability standpoint.</p>
+
+<p>The only docs a user is guaranteed to have explain <em>none</em> of the core terms (package, group, meta package, dependency), don’t even <em>mention</em> the configuration file, and provide <em>no</em> pointers to further resources.
+A user that does not already know what is what, or where to find more information, is stuck with going online and getting told to RTFM by First Responder.</p>
+
+<h1 id="how-to-fix-it">How to fix it</h1>
+<p>Here’s a cheap fix:
+accept broken pointers.
+The man page may not be available, but <em>it doesn’t matter</em>, tell the user about it anyway.
+The wiki may not be available, but <em>it doesn’t matter</em>, tell the user about it anyway.
+If the user <em>needs</em> to read something to understand how to use your software, then it <em>isn’t optional</em> and it’s <em>your job</em> to provide it.</p>
+
+<p>The better solution is to make sure your help system tells your users everything they need to know in order to use your software.
+This is definitely an achievable goal: <a href="./404.html">git-help is a case study in good documentation</a>.</p>
+
+  </div><a class="u-url" href="/2021/09/06/rtfm.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Pabladas de Pablo</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Pablo Repetto</li><li><a class="u-email" href="mailto:pablo.ernesto.repetto@gmail.com">pablo.ernesto.repetto@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/pabloernesto"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">pabloernesto</span></a></li><li><a href="https://www.twitter.com/ernestosakurai"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">ernestosakurai</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
