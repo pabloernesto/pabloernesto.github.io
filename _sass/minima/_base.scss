@@ -59,6 +59,14 @@ img {
   vertical-align: middle;
 }
 
+/**
+ * 2021-12-11: center images
+ */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
 
 /**
  * Figures
