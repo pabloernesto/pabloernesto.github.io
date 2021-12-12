@@ -229,6 +229,16 @@
 .post-content {
   margin-bottom: $spacing-unit;
 
+  /**
+   * 2021-12-11: fix h1
+   */
+  h1 {
+    @include relative-font-size(2.375);
+    @include media-query($on-laptop) {
+      @include relative-font-size(2.125);
+    }
+  }
+
   h2 {
     @include relative-font-size(2);
 
