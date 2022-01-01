@@ -1,9 +1,12 @@
 /**
  * Reset some basic elements
+ * 2022-01-01: style footnotes header
  */
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+dl, dd, ol, ul, figure,
+.footnotes::before
+{
   margin: 0;
   padding: 0;
 }
@@ -32,11 +35,13 @@ body {
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
+ * 2022-01-01: style footnotes header
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
-%vertical-rhythm {
+%vertical-rhythm,
+.footnotes::before {
   margin-bottom: $spacing-unit / 2;
 }
 
@@ -99,8 +104,9 @@ li {
 
 /**
  * Headings
+ * 2022-01-01: style footnotes header
  */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .footnotes::before {
   font-weight: $base-font-weight;
 }
 
@@ -258,4 +264,11 @@ table {
   td {
     border: 1px solid $grey-color-light;
   }
+}
+
+/**
+ * 2022-01-01: simulate footnotes header
+ */
+.footnotes::before {
+  content: 'Notes';
 }
