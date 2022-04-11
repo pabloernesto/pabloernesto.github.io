@@ -2,6 +2,7 @@
 layout: post
 title: "Summary: \"Internet Search tips\" by Gwern Branwen"
 tags: summary
+series: research
 ---
 Branwen, Gwern. Internet Search Tips, 11 December 2018. [https://www.gwern.net/Search](https://www.gwern.net/Search). Accessed: 2022-04-05.
 

@@ -2,6 +2,7 @@
 layout: post
 title: "Summary: \"How to write a thesis\" by Umberto Eco"
 tags: summary
+series: research
 ---
 Eco, Umberto. _How to Write a Thesis_. MIT Press, 2015. Translated by Caterina Mongiat Farina and Geoff Farina. Original publication: _Come si fa una tesi di laurea: le materie umanistiche_. Bompiani, 1977.
 

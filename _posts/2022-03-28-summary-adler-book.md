@@ -2,6 +2,7 @@
 layout: post
 title: "Summary: \"How to read a book\" by Mortimer Adler"
 tags: summary
+series: research
 ---
 Adler, Mortimer J, and Charles Van Doren. _How to Read a Book: The Classic Guide to Intelligent Reading_. New York: Touchstone, 2011. ISBN 978-1-4391-4483-1. Original publication: _How to Read a Book: The Art of Getting a Liberal Education_. Simon and Schuster, 1940. OCLC 822771595.
 

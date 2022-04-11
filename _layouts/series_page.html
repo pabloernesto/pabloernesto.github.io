@@ -1,0 +1,21 @@
+---
+layout: page
+---
+{{ content }}
+
+<p>These are the posts in the "{{ page.series }}" series:</p>
+
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+{% assign posts = site.posts
+    | reverse
+    | where: "series", page.series
+%}
+
+<ul>
+{% for p in posts %}
+    <li>
+        {{ p.date | date: date_format }}
+        <a href="{{ p.url }}">{{ p.title }}</a>
+    </li>
+{% endfor %}
+</ul>
