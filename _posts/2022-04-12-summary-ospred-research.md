@@ -88,4 +88,4 @@ Conclusion 7:06
 # General commentary
 This video is so snappy and fun that I really wish there was more to it. While it captures the core research loop really well, it's a dead end. When you inevitably want a more comprehensive guide, you'll be on your own.
 
-I don't know if [the suggestion of acquiring research material legally](#legally-of-course) is to be read tonge-in-cheek. Red says it entirely straight-faced, but she also has a YouTube channel. A video in which you tell people to do crimes is a pretty big liability, so it could be a statement under duress. A quick search on the OSP twitter account didn't find a position in either direction.
+I don't know if [the suggestion of acquiring research material legally](#legally-of-course) is to be read tongue-in-cheek. Red says it entirely straight-faced, but she also has a YouTube channel. A video in which you tell people to do crimes is a pretty big liability, so it could be a statement under duress. A quick search on the OSP twitter account didn't find a position in either direction.
