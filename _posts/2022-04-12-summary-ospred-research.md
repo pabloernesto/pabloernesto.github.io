@@ -29,21 +29,21 @@ Step 4: Break out the thumbtacks and string! 6:24
 Introduction 0:00
 
 Step 1: Wikipedia
-	1.1 Yes, Wikipedia, I'm serious 0:31
-	1.2 Never cite Wikipedia 0:39
-	1.3 Source of sources 0:48
-	1.4 Get greedy! 1:15
+    1.1 Yes, Wikipedia, I'm serious 0:31
+    1.2 Never cite Wikipedia 0:39
+    1.3 Source of sources 0:48
+    1.4 Get greedy! 1:15
 
 Step 2: Sources
-	2.1 Acquiring sources 1:43
-	2.2 Primary and secondary sources 2:30
-	2.3 Context is everything 4:06
+    2.1 Acquiring sources 1:43
+    2.2 Primary and secondary sources 2:30
+    2.3 Context is everything 4:06
 
 Step 3: Notes 5:11
 
 Step 4: The Conspiracy Board
-	4.1 Thumbtacks and string 6:17
-	4.2 Thesis LAST 6:51
+    4.1 Thumbtacks and string 6:17
+    4.2 Thesis LAST 6:51
 
 Conclusion 7:06
 ```
