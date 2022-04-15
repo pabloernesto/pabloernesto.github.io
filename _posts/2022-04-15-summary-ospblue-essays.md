@@ -12,7 +12,7 @@ This got recommended at the end of
 and can be considered part of the same series.
 
 # In one paragraph
-Academic reading is often boring reading, which is hard. Summaries, audiobooks, and limited or "focused" reading will help you get through a boring book, while annotating it will help you re-find things. Literary analysis accomodates as many  meanings as you can sell your audience on. Good project management helps with writing too: schedule abundant time, make a point of taking breaks and revisiting drafts, and seek early feedback. Also texts should flow, try reading your writing aloud.
+Academic reading is often boring reading, which is hard. Summaries, audiobooks, and limited or "focused" reading will help you get through a boring book, while annotating it will help you re-find things. Literary analysis accommodates as many meanings as you can sell your audience on. Good project management helps with writing too: schedule abundant time, make a point of taking breaks and revisiting drafts, and seek early feedback. Also texts should flow, try reading your writing aloud.
 
 # Table of Contents
 Table of Contents in the original is embedded as text on the video.
