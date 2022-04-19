@@ -143,7 +143,7 @@ Search engines mentioned in the article (almost certainly incomplete):
 - Books: archive.org, archive.today, books.google.com, libgen.is, HathiTrust, worldcat.org
 - Web archival sites: archive.org, timetravel.mementoweb.org
 - Academic: scholar.google.com, proquest.com, sci-hub
-- Academic, bibliographic only: elibary.ru
+- Academic, bibliographic only: elibrary.ru
 - Image-based search: images.google.com, TinEye, Yandex search
 - Domain-specific: www.pacer.uscourts.gov (US court documents), PubMed (medical)
 
