@@ -94,7 +94,7 @@ $$\text{Let } f(m) = \begin{cases}
 
 then for any natural number $$n$$, *it is conjectured* that we can reach $$1$$ by repeated application of $$f$$.
 
-Let's say we want to calculate how many applications of $$f$$ we need to reach 1 from a given n. The recursive definition is super simple: if $$n = 1$$, we don't need to apply $$f$$ at all; otherwise, we calculate $f$(n)$$ once and ask "are we there yet?"
+Let's say we want to calculate how many applications of $$f$$ we need to reach 1 from a given n. The recursive definition is super simple: if $$n = 1$$, we don't need to apply $$f$$ at all; otherwise, we calculate $$f(n)$$ once and ask "are we there yet?"
 
 ```scala
 def f(n) = {
