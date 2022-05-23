@@ -287,6 +287,6 @@ function fib(n) {
 }
 ```
 
-You can call `fib(30)` to get the 30th fibonacci number. And you can call `fib.toString()` to get *a String with fib's source code.* This means we can now make a function that takes some other arbitrary function, gets it's source, and checks whether it's recursive. Or (in conjunction to [Function()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)) creates a different function called "memoized_whatever". Or translates it to a different programming language. That is *wild*.
+You can call `fib(30)` to get the 30th fibonacci number. And you can call `fib.toString()` to get *a String with fib's source code.* This means we can now make a function that takes some other arbitrary function, gets its source, and checks whether it's recursive. Or (in conjunction to [Function()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)) creates a different function called "memoized_whatever". Or translates it to a different programming language. That is *wild*.
 
 Fibonacci is a classic problem for a reason: it is simple enough a complete novice can understand it, but it has amazing depth and reveals a lot about the capabilities of the language you are working with.
