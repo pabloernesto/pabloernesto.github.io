@@ -9,7 +9,9 @@ A friend of a friend recently referred me for a position at a software developme
 The Fibonacci sequence is defined recursively:
 
 $$\text{Fibonacci}_1 = 1$$
+
 $$\text{Fibonacci}_2 = 1$$
+
 $$\text{Fibonacci}_n = \text{Fibonacci}_{n-1} + \text{Fibonacci}_{n-2}
     \quad \forall n > 2$$
 
@@ -23,7 +25,7 @@ def fib(n: Int): Int = n match {
 }
 ```
 
-This algorithm is correct. For every natural n, it will produce $\text{Fibonacci}_n$, given enough time and memory. However, it is terribly inefficient, due to "combinatorial explosion".
+This algorithm is correct. For every natural n, it will produce $$\text{Fibonacci}_n$$, given enough time and memory. However, it is terribly inefficient, due to "combinatorial explosion".
 
 ```
 fib(6)
@@ -90,9 +92,9 @@ $$\text{Let } f(m) = \begin{cases}
   \text{else} \quad 3n + 1
 \end{cases}$$
 
-then for any natural number $n$, *it is conjectured* that we can reach $1$ by repeated application of $f$.
+then for any natural number $$n$$, *it is conjectured* that we can reach $$1$$ by repeated application of $$f$$.
 
-Let's say we want to calculate how many applications of f we need to reach 1 from a given n. The recursive definition is super simple: if $n = 1$, we don't need to apply $f$ at all; otherwise, we calculate $f(n)$ once and repeat.
+Let's say we want to calculate how many applications of $$f$$ we need to reach 1 from a given n. The recursive definition is super simple: if $$n = 1$$, we don't need to apply $$f$$ at all; otherwise, we calculate $f$(n)$$ once and repeat.
 
 ```scala
 def f(n) = {
