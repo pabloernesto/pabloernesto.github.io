@@ -164,7 +164,7 @@ def memoize[K, V](f: K => V): K => V = {
 
 The function signature is slightly wonky: it takes a function from K to V, and returns a different function from K to V. K and V are parameters, so we can memoize functions from Int to Int, from Int to String, from Person to Place, or whatever else we fancy... but try to stick to immutable classes.
 
-There's an important but subtle point to make about line 3: memoize returns a new function that takes some value, k, and returns `cache.getOrElseUpdate(k, f(k))`. getOrElseUpdate is designed not to evaluate it's second argument unless it's value is needed. This is called *non-strict evaluation* and it's not the default behavior for Scala functions. You can write your own non-strict functions using some special notation[^non-strict].
+There's an important but subtle point to make about line 3: memoize returns a new function that takes some value, k, and returns `cache.getOrElseUpdate(k, f(k))`. `getOrElseUpdate` is designed not to evaluate its second argument unless the value is needed. This is called *non-strict evaluation* and it's not the default behavior for Scala functions. You can write your own non-strict functions using some special notation[^non-strict].
 
 [^non-strict]: Chiusano, Paul, and Rúnar Bjarnason. _Functional Programming in Scala_. Shelter Island, NY: Manning Publications, 2015. ch5.
 
