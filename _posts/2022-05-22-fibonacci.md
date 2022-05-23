@@ -253,7 +253,7 @@ val collatz: Int => Int = memoize {
 
 # Short of the ideal
 Var-based (or val-based) memoization works great, but still has a couple of limitations:
-1. adding memoization to fib requires *altering* fib (either at at definition, or through mutation)
+1. adding memoization to fib requires *altering* fib (either at the definition, or through mutation)
 2. we can't add memoization to fib without access to the fib variable (ie: we can't memoize arbitrary lambdas)
 
 Point two has an obvious practical implication: we can't write a procedure that automatically tests some function f against it's memoized version:
