@@ -260,7 +260,9 @@ Point two has an obvious practical implication: we can't write a procedure that 
 
 ```scala
 def test_memo[K, V](f: K => V, k: K): String = {
-  // if f is fib, then both versions will suffer from combinatorial explosion, and we have no way of doing real memoization from inside test_memo
+  // if f is fib, then both versions will suffer
+  // from combinatorial explosion. sadly, we have
+  // no way of doing real memoization from inside test_memo
   val fast_f = memoize(f)
 
   val t1 = System.nanoTime()
