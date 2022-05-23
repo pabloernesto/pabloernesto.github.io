@@ -193,7 +193,7 @@ However, we *are* on to something. Since Maps don't share LazyList's hardcore ta
 
 [^line-noise]: I've found multiple crap quotes-sites attributing "Python is executable pseudocode. Perl is executable line noise." to Bruce Eckel. The Internet Archive has a 2001 snapshot of his site that includes the quote among [some notes for a planned book](http://web.archive.org/web/20010410010348/www.mindview.net/Books/Python/ThinkingInPython.html). However some googling yields [a quote collection](http://web.archive.org/web/20220129075431/http://www.gdargaud.net/Humor/QuotesProgramming.html) that also includes it, dated 2000 (beats me how Google dated it, since it doesn't seem to include any date metadata). So Eckel is *probably* a misattribution.
 
-In Scala, calls to fib inside of fib refer to the *symbol* fib. If we define fib as a var, then when we change what fib is, those inner calls will change too.
+In Scala, calls to fib inside of fib refer to the *symbol* fib. If we define fib as a `var`, then changing fib will change those inner references:
 
 ```scala
 var fib: Int => BigInt = {
