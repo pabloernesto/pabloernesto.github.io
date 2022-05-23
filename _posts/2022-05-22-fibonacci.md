@@ -63,7 +63,7 @@ def iterative_fib(n: Int) = {
 }
 ```
 
-This is fast, memory efficient, not terribly difficult to figure out how to write. The problem is that you *have to figure out how to write it.* Creating an iterative algorithm for a recursively defined function is not a trivial task. Fibonacci is pretty simple but it still takes a minute, and you can still make mistakes. Plus, every time you change the recursive definition you need to do some pretty complicated mental gymnastics to figure out how that change affects the iterative algorithm.
+This is fast, memory efficient, and not terribly difficult to figure out how to write. The problem is that you *have to figure out how to write it.* Creating an iterative algorithm for a recursively defined function is not a trivial task. Fibonacci is pretty simple but it still takes a minute, and you can still make mistakes. Plus, every time you change the recursive definition you need to do some pretty complicated mental gymnastics to figure out how that change affects the iterative algorithm.
 
 # LazyList Fibonacci
 Scala has two lazily-defined data structures: the deprecated Stream class, and its replacement LazyList. These provide the "easy" way to do memoization[^what-is-memo] in Scala.
