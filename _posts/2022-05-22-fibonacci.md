@@ -187,7 +187,7 @@ Why? Consider `fast_fib(100)`: if we don't already have the answer in cache, `fa
 However, we *are* on to something. Since Maps don't share LazyList's hardcore take on sequential access, we can memoize `collatz` without causing Scala to blow a fuse. The missing step is to make sure that *recursive* calls also go through the cache.
 
 # var self-reference Fibonacci
-*This approach is lifted almost verbatim from "Higher Order Perl"[^hop]. I cannot recommend this book enough. It's the only programming book I can call beautiful with no reservations. It's only shortcoming is that it's about Perl. There's a saying that goes "Python is executable pseudocode. Perl is executable line noise."[^line-noise] So I guess I have *some* reservations, but it's still an incredible read.*
+*This approach is lifted almost verbatim from "Higher Order Perl"[^hop]. I cannot recommend this book enough. It's the only programming book I can call beautiful with no reservations. It's only shortcoming is that it's about Perl. There's a saying that goes "Python is executable pseudocode. Perl is executable line noise."[^line-noise] ...so I guess I have some reservations, but it's still an incredible read.*
 
 [^hop]: Dominus, Mark Jason. *Higher-Order Perl: Transforming Programs with Programs.* 1st ed. Amsterdam ; Boston, Mass: Morgan Kaufmann Publishers, 2005. *s3.5*
 
