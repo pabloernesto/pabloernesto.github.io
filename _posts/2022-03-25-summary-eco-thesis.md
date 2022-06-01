@@ -89,7 +89,7 @@ Notes 225
     or "How to Please an Academic Committee in a Human Timeframe" (ch2)
 3. Bibliographical research
     1. Intelligent use of libraries (ss 3.2.1, 3.2.4)
-    2. Skimming (p57)
+    2. Skimming (p58)
 4. Staying organized,
     or "How to Juggle a Hundred Books Without Getting Lost"
     1. Card systems (s3.2.2, s4.2)
