@@ -32,7 +32,11 @@ plugins:
   - jekyll-feed
 minima:
   date_format: "%Y-%m-%d" # sensible (ISO-8601) date format
+
+# markdown parser settings
 markdown: "kramdown" # kramdown dependency by `{:toc}`
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
 
 # Exclude from processing.
 # The following items will not be processed, by default.
