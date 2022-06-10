@@ -6,6 +6,9 @@ series: research
 ---
 Wentworth, John S. *How To Write Quickly While Maintaining Epistemic Rigor.* LessWrong (blog), August 28, 2021. [https://www.lesswrong.com/posts/Psr9tnQFuEXiuqGcR/how-to-write-quickly-while-maintaining-epistemic-rigor](https://www.lesswrong.com/posts/Psr9tnQFuEXiuqGcR/how-to-write-quickly-while-maintaining-epistemic-rigor). Accessed 2022-04-08.
 
+1. TOC
+{:toc}
+
 # Why
 "How To Write Quickly While Maintaining Epistemic Rigor" sounds like a gift-wrapped solution to my research question. I didn't know the author, but I *had* to read this.
 

@@ -6,6 +6,9 @@ series: research
 ---
 Adler, Mortimer J, and Charles Van Doren. _How to Read a Book: The Classic Guide to Intelligent Reading_. New York: Touchstone, 2011. ISBN 978-1-4391-4483-1. Original publication: _How to Read a Book: The Art of Getting a Liberal Education_. Simon and Schuster, 1940. OCLC 822771595.
 
+1. TOC
+{:toc}
+
 # Why
 Because it was recommended by Samo Burja[^eight-books]. I put some weight on Samo's advice because of his articles on the theory of power, collected in book form as _Great Founder Theory_[^gft].
 

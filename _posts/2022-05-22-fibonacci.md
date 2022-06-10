@@ -2,6 +2,9 @@
 layout: post
 title: "A brief tour of Scala: two classic problems"
 ---
+1. TOC
+{:toc}
+
 # Introduction
 A friend of a friend recently referred me for a position at a software development company. Since the company uses Scala a bunch, I've been checking it out. I wanted working knowledge ASAP, so I settled on doing programming katas. Two of these problems turned out to be surprisingly revealing, and well deserving of a post.
 

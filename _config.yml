@@ -32,6 +32,7 @@ plugins:
   - jekyll-feed
 minima:
   date_format: "%Y-%m-%d" # sensible (ISO-8601) date format
+markdown: "kramdown" # kramdown dependency by `{:toc}`
 
 # Exclude from processing.
 # The following items will not be processed, by default.
