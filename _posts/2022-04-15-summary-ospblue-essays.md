@@ -6,6 +6,9 @@ series: research
 ---
 Blue. *How to Read Books and Write Essays.* Overly Sarcastic Productions, 2019. [https://www.youtube.com/watch?v=E3v8-j1znXM](https://www.youtube.com/watch?v=E3v8-j1znXM).
 
+1. TOC
+{:toc}
+
 # Why
 This got recommended at the end of
 [Red's video on how to do research]({% post_url 2022-04-12-summary-ospred-research %})

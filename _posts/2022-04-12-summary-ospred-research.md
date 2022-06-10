@@ -6,6 +6,9 @@ series: research
 ---
 Red. *How to Do Research.* Overly Sarcastic Productions, 2019. [https://www.youtube.com/watch?v=sigJwoeU6OI](https://www.youtube.com/watch?v=sigJwoeU6OI).
 
+1. TOC
+{:toc}
+
 # Why
 Overly Sarcastic Productions are two friends making short (around 14 minutes) video presentations about history, mythology, and literature. I stumbled upon this video by scrolling through their back-catalog, and the title hooked me in.
 

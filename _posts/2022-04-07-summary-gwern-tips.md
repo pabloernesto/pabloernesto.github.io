@@ -6,6 +6,9 @@ series: research
 ---
 Branwen, Gwern. Internet Search Tips, 11 December 2018. [https://www.gwern.net/Search](https://www.gwern.net/Search). Accessed: 2022-04-05.
 
+1. TOC
+{:toc}
+
 # Why
 If memory serves, I learned of Gwern through LessWrong. He was mentioned as a guy who did really careful self-experiments with different drugs. His blog seemed consistently well-researched and earnest (plus he makes and shares some cool data analyses), so I downloaded a copy of his research tips.
 

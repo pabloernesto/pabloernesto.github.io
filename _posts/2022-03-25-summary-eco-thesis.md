@@ -6,6 +6,9 @@ series: research
 ---
 Eco, Umberto. _How to Write a Thesis_. MIT Press, 2015. Translated by Caterina Mongiat Farina and Geoff Farina. Original publication: _Come si fa una tesi di laurea: le materie umanistiche_. Bompiani, 1977.
 
+1. TOC
+{:toc}
+
 # Why
 Mainly, because it was there. I read it years ago, and it stuck with me. I also respect Eco. I've enjoyed several of his novels, and I know he is well regarded as an academic.
 
