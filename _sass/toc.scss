@@ -1,0 +1,16 @@
+#markdown-toc {
+    /* border */
+    display: inline-block;
+    border: 1px solid grey;
+    border-left: 5px solid grey;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+
+    font-style: italic;
+
+    /* put markers inside the borders */
+    /* see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation */
+    margin-left: 0;
+    padding-left: 30px;
+}
