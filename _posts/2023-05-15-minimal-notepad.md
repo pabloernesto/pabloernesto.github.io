@@ -5,7 +5,7 @@ title: I made a thing! minimal-notepad
 I made a thing!
 It's an browser based plain-text editor.
 It's super basic, tiny (40KB), fast, and it works offline!
-You can [use it for free][applink] without adds.
+You can [use it for free][applink] without ads.
 
 [applink]: /apps/minimal-notepad/
 
