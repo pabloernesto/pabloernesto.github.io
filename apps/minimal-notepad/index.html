@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>minimal notepad</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link href="style.css" rel="stylesheet" />
+    <script src="main.js" type="module"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <button id="hamburger" class="interaction-icon">
+                <svg><use href="#icon-hamburger"/></svg>
+            </button>
+            <form class="search">
+                <svg class="search__icon"><use href="#icon-search"/></svg>
+                <input id="search" class="search__input" type="search" autocomplete="off" spellcheck="false">
+                <button class="search__clear" type="reset">
+                    <svg><use href="#icon-close"/></svg>
+                </button>
+            </form>
+            <button id="note-add" class="interaction-icon">
+                <svg><use href="#icon-note-add"/></svg>
+            </button>
+            <div class="dropdown">
+                <button id="more" class="dropdown__button interaction-icon">
+                    <svg><use href="#icon-more-vert"/></svg>
+                </button>
+                <nav class="dropdown__menu">
+                    <button id="note-rename">Rename note</button>
+                    <button id="note-delete">Delete note</button>
+                </nav>
+            </div>
+        </header>
+        <ul id="notelist"></ul>
+        <div class="content__container">
+            <div class="spinner"></div>
+            <div id="content" contenteditable></div>
+        </div>
+        <dialog id="note-rename-dialog">
+            <form method="dialog" novalidate>
+                <input type="text" required pattern="[0-9a-zA-Z _\-!?.,;:]+"></input>
+                <button value="ok">Rename</button>
+                <button type="button">Cancel</button>
+            </form>
+            <span class="tooltip">error</span>
+        </dialog>
+    </div>
+    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <symbol id="icon-hamburger" viewBox="0 96 960 960">
+                <title>Menu</title>
+                <path fill="currentcolor" d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+            </symbol>
+            <symbol id="icon-search" viewBox="0 96 960 960">
+                <title>Search</title>
+                <path fill="currentcolor" d="M796 935 533 672q-30 26-70 40.5T378 727q-108.2 0-183-75-75-75-75-181t75-181q75-75 181.5-75t181 75Q632 365 632 471.1q0 42.9-14 82.9-14 40-42 75l264 262-44 44ZM377 667q81.3 0 138.1-57.5T572 471q0-81-56.9-138.5T377 275q-82 0-139.5 57.5T180 471t57.5 138.5Q294.9 667 377 667Z"/>
+            </symbol>
+            <symbol id="icon-close" viewBox="0 96 960 960">
+                <title>Close</title>
+                <path fill="currentcolor" d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/>
+            </symbol>
+            <symbol id="icon-note-add" viewBox="0 96 960 960">
+                <title>New note</title>
+                <path fill="currentcolor" d="M450 822h60V693h130v-60H510V503h-60v130H320v60h130v129ZM220 976q-24 0-42-18t-18-42V236q0-24 18-42t42-18h361l219 219v521q0 24-18 42t-42 18H220Zm331-554V236H220v680h520V422H551ZM220 236v186-186 680-680Z"/>
+            </symbol>
+            <symbol id="icon-more-vert" viewBox="0 96 960 960">
+                <title>More</title>
+                <path fill="currentcolor" d="M479.858 896Q460 896 446 881.858q-14-14.141-14-34Q432 828 446.142 814q14.141-14 34-14Q500 800 514 814.142q14 14.141 14 34Q528 868 513.858 882q-14.141 14-34 14Zm0-272Q460 624 446 609.858q-14-14.141-14-34Q432 556 446.142 542q14.141-14 34-14Q500 528 514 542.142q14 14.141 14 34Q528 596 513.858 610q-14.141 14-34 14Zm0-272Q460 352 446 337.858q-14-14.141-14-34Q432 284 446.142 270q14.141-14 34-14Q500 256 514 270.142q14 14.141 14 34Q528 324 513.858 338q-14.141 14-34 14Z"/>
+            </symbol>
+        </defs>
+    </svg>
+    <div class="error">
+        IndexedDB is disabled or not available.<br>
+        This app needs JavaScript and IndexedDB to function.
+    </div>
+    <noscript><div class="error active">
+        JavaScript is disabled.<br>
+        This app needs JavaScript and IndexedDB to function.
+    </div></noscript>
+</body>
+</html>
