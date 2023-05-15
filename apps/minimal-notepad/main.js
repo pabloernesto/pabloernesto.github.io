@@ -194,7 +194,7 @@ function initUI() {
 
         let _timeout = timeout(2000);
         let _action = _timeout.then(() => {
-            storage.save(current_note, text.innerText);
+            storage.save(current_note, text.value);
             document.getElementById("app").classList.remove("dirty");
             saveTimer = undefined;
         }).catch(() => {});
@@ -350,7 +350,7 @@ async function noteLoad(title) {
     }
     current_note = title;
     updateNoteList();
-    text.innerText = await storage.load(current_note);
+    text.value = await storage.load(current_note);
 }
 async function noteRename(newtitle) {
     if (saveTimer !== undefined) {

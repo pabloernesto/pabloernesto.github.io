@@ -1,5 +1,5 @@
 /* clear box style */
-html, body, div, span, p, ol, ul, li, form, label,
+html, body, div, span, p, ol, ul, li, form, label, textarea,
 header, menu, nav, input,button, dialog {
     margin: 0;
     padding: 0;
@@ -99,6 +99,7 @@ html {
     border: solid var(--color-ruler);
     border-width: 0 1px;
     word-wrap: break-word;
+    resize: none;   /* prevent textarea resize */
 }
 
 @media screen and (900px <= width) {
