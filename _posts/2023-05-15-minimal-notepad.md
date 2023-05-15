@@ -34,7 +34,7 @@ The only dependency is [Jake Archibald's IndexedDB Promised][idb] library.
 
 
 # Prior work
-Inspired by Mark Francis' editor Bookmarklet tweet, as seen in Paul, Ian. *Turn Any Browser Tab into a Basic Text Editor.* PCWorld, June 6, 2014. https://www.pcworld.com/article/2360940/turn-any-browser-tab-into-a-basic-text-editor.html.
+Inspired by Mark Francis' editor Bookmarklet tweet, as seen in Paul, Ian. *Turn Any Browser Tab into a Basic Text Editor.* 2014-06-06, [PCWorld](https://www.pcworld.com/article/2360940/turn-any-browser-tab-into-a-basic-text-editor.html).
 
 Another big inspiration/role model during development was [DevDocs.io][devdocs].
 It's an offline documentation browser for software developers, that's everything I aspired `minimal-notepad` to be: free, fast, offline, pretty, and ad-free.
@@ -42,7 +42,7 @@ I use it every day.
 
 [devdocs]: https://devdocs.io
 
-For a discussion of technical problems in making web-based rich-text editors, see Medvedev, Ilya. *How To Develop A Text Editor For The Web.* 2022-02-22 https://www.smashingmagazine.com/2022/02/develop-text-editor-web/
+For a discussion of technical problems in making web-based rich-text editors, see Medvedev, Ilya. *How To Develop A Text Editor For The Web.* 2022-02-22, [Smashing Magazine](https://www.smashingmagazine.com/2022/02/develop-text-editor-web/)
 
 A similar app is [StackEdit.io][stackedit].
 StackEdit is a split-pane Markdown editor, it supports linking images (but not uploading them), adding links between notes, etc.
