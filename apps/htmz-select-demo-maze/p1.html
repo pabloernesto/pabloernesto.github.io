@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>htmz demo maze</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link href="style.css" rel="stylesheet" />
+  <script src="./htmz.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <iframe hidden name="htmz" onload="window.htmz(this)"></iframe>
+  <div id="game">
+    <div style="display: none;">
+      <ol class="from-p2">
+        <li><strong>Go South</strong></li>
+      </ol>
+    </div>
+
+    <p>Welcome to the maze!</p>
+    <p>
+      There's cake at the end!
+      Good luck!
+    </p>
+    <p class="gametext">
+      This is the start of the maze.
+    </p>
+    <ol id="opts">
+      <a href="p1.html">link here</a>
+      <li><a href="p2.html#opts .from-p1, .gametext, #opts" target="htmz">Go West</a></li>
+      <li><a href="p3.html#opts .from-p1, .gametext, #opts" target="htmz">Go East</a></li>
+    </ol>
+  </div>
+</body>
+</html>

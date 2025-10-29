@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>htmz demo maze</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link href="style.css" rel="stylesheet" />
+  <script src="./htmz.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <iframe hidden name="htmz" onload="window.htmz(this)"></iframe>
+
+  <div id="game">
+    <p>Welcome back to the maze!</p>
+
+    <div style="display: none;">
+      <ol class="from-p1">
+        <li><strong>Go West</strong></li>
+        <li>Go East</li>
+      </ol>
+    </div>
+
+    <p class="gametext">
+      In a bend in the corridor, you see what seems to be
+      a trash compactor chute.
+    </p>
+
+    <ol id="opts">
+      <a href="p3.html">link here</a>
+      <li><a href="p2.html#opts .from-p3, .gametext, #opts" target="htmz">
+        Slide down the chute. Weeee!
+      </a></li>
+      <li><a href="p1.html#opts .from-p3, .gametext, #opts" target="htmz">
+        Go South
+      </a></li>
+      <li><a href="p4.html#opts .from-p3, .gametext, #opts" target="htmz">
+        Go North
+      </a></li>
+    </ol>
+  </div>
+</body>
+</html>

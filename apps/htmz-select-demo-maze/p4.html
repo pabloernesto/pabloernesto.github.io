@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>htmz demo maze</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link href="style.css" rel="stylesheet" />
+  <script src="./htmz.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <iframe hidden name="htmz" onload="window.htmz(this)"></iframe>
+
+  <div style="display: none;">
+    <ol class="from-p3">
+      <li>Slide down the chute. Weeee!</li>
+      <li>Go South</li>
+      <li><strong>Go North</strong></li>
+    </ol>
+  </div>
+
+  <div id="game">
+    <p class="gametext">
+      This is the end of the maze!
+      I know it wasn't very complicated, but it <em>was</em> just a demo.
+      Maybe you'd like to buy the full version?
+    </p>
+    <p class="gametext">
+      ...just kidding, there isn't one!
+      You see, that was me using an advance technique called "lying".
+    </p>
+    <p class="gametext">
+      And speaking of lying, there isn't any cake here either.
+      Toodles!
+    </p>
+
+    <ul id="opts">
+      <li><a href="p4.html">link here</a></li>
+      <li><a href="p1.html#game" target="htmz">Play again</a></li>
+    </ul>
+  </div>
+</body>
+</html>

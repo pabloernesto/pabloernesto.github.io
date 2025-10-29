@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>htmz demo maze</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link href="style.css" rel="stylesheet" />
+  <script src="./htmz.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <iframe hidden name="htmz" onload="window.htmz(this)"></iframe>
+
+  <div id="game">
+    <p>Welcome back to the maze!</p>
+
+    <div style="display: none;">
+      <ol class="from-p1">
+        <li><strong>Go West</strong></li>
+        <li>Go East</li>
+      </ol>
+      <ol class="from-p3">
+        <li><strong>Slide down the chute. Weeee!</strong></li>
+        <li>Go South</li>
+        <li>Go North</li>
+      </ol>
+    </div>
+
+    <p class="from-p3">You fall into a pile of trash.</p>
+
+    <p class="gametext">
+      It's cramped and smelly in here, and it seems to be a dead.
+      Onwards!
+    </p>
+
+    <ol id="opts">
+        <a href="p2.html">link here</a>
+      <li><a href="p1.html#opts .from-p2, .gametext, #opts" target="htmz">Go South</a></li>
+    </ol>
+  </div>
+</body>
+</html>
