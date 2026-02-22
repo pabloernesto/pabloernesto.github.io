@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wait time timer</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon" /> -->
+  <!-- <meta name="author" content="myname" />  -->
+  <!-- <meta name="description" content="blurb for google search" />  -->
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" module></script>
+</head>
+<body class="app" onload="estimator.render()">
+  <noscript class="nojs">This app requires JavaScript to run.</noscript>
+  <div class="estimator" onchange="estimator.updateQueue(event)">
+    <label class="estimator__field">
+      Current number (non-negative integer):
+      <input
+        class="textbox wham"
+        id="estimator__current-number"
+        type="text"
+        inputmode="numeric"
+        pattern="\d+"
+        required
+      >
+    </label>
+    <label class="estimator__field">
+      My number (positive integer larger than the current number):
+      <input
+        class="textbox wham"
+        id="estimator__my-number"
+        type="text"
+        inputmode="numeric"
+        pattern="\d+"
+        required
+      >
+    </label>
+    <p>
+      Your average remaining wait is
+      (at least 5 times to calculate):
+    </p>
+    <span id="estimator__avg-rem" class="estimator__out">XX:XX</span>
+    <p>You have a 95% chance to get away with stepping out for up to
+      (at least 8 times to calculate):
+    </p>
+    <span id="estimator__ci-lo" class="estimator__out">XX:XX</span>
+    <p>
+      You have a 95% chance of waiting no more than
+      (at least 8 times to calculate):
+    </p>
+    <span id="estimator__ci-hi" class="estimator__out">XX:XX</span>
+  </div>
+  <div class="timer">
+    <div class="timer__display-container">
+      <span class="timer__display">00:00</span>
+      <p id="youre-next" class="warning displaynone">You're next!</p>
+      <p id="youre-up" class="warning displaynone">You're up!</p>
+    </div>
+    <div class="timer__controls">
+      <button
+        class="timer__start"
+        onclick="estimator.toggleTimer()"
+      >
+        Start
+      </button>
+      <button class="timer__lap" disabled onclick="estimator.advanceQueue()">
+        Queue moved
+      </button>
+    </div>
+  </div>
+  <div class="timing-data">
+  </div>
+</body>
+</html>

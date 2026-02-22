@@ -1,0 +1,140 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 1.8rem 0;
+  background-color: lightgray;
+}
+
+.app > * {
+  width: min(40rem, 95%);
+  border: 2px solid darkslategray;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+}
+
+.estimator {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  line-height: 130%;
+  padding-block: 1.8rem;
+}
+.estimator > * + * {
+  margin-top: 1.5rem;
+}
+.estimator__field {
+  display: block;
+}
+.estimator__out {
+  display: block;
+  text-align: center;
+  font-size: 1.3em;
+  margin-top: 0.8rem;
+}
+
+.textbox {
+  /* outline: 1px solid magenta; */
+  display: block;
+  width: min(15rem, 95%);
+  height: 3rem;
+  margin-inline: auto;
+  border: 1px solid grey;
+  border-radius: 0.7rem;
+  padding: 0 1rem;
+}
+.textbox:not(:focus):invalid {
+  border: 2px solid red;
+}
+
+.timer {
+  height: min(15rem, 90vh);
+  display: flex;
+  flex-direction: column;
+}
+.timer__display-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  text-align: center;
+}
+.timer__display {
+  font-size: xx-large;
+  text-align: center;
+  grid-row: 1;
+  grid-column: 2;
+}
+.timer__controls {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 30%;
+  gap: 2rem;
+}
+.timer__start {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid grey;
+}
+.timer__lap {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid grey;
+}
+:disabled {
+  color: grey;
+}
+.warning {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  grid-column: 3;
+  color: red;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+  .timer {
+    position: fixed;
+    bottom: 1rem;
+    height: unset;
+    flex-direction: row;
+    height: unset;
+    width: 98%;
+  }
+  .timer__display-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .timer__controls {
+    gap: .8rem;
+  }
+
+  .warning {
+    font-size: 1rem;
+  }
+
+  .app {
+    padding-bottom: 8rem;
+  }
+}
+
+.timing-data {
+  min-height: 5rem;
+}
+
+.displaynone {
+  display: none;
+}
+
+.timing-data ol {
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+  /* two-column list, without layout shift */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
