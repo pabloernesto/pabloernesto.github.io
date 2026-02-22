@@ -23,9 +23,13 @@ function millisToDisplayString (millis) {
   }
   const secs = Math.floor(millis / 1000) % 60;
   const mins = Math.floor(millis / (1000*60)) % 60;
-  return leftpad(mins.toString(), 2, '0')
+  const hours = Math.floor(millis / (1000*60*60)) % 24;
+  return (
+    (hours ? leftpad(hours.toString(), 2, '0') + ':' : '')
+    + leftpad(mins.toString(), 2, '0')
     + ':'
-    + leftpad(secs.toString(), 2, '0');
+    + leftpad(secs.toString(), 2, '0')
+  );
 }
 
 function calculateEstimates(state) {
@@ -117,12 +121,17 @@ const estimator = {
 
     /* NOTE: maybe avoid rebuilding the full list?
       it doesn't seem to cause scroll jumps, so it's probably fine as-is */
+    let lapLis = [];
+    let lapAcc = 0;
+    for (const lapMillis of this._appState.laps) {
+      lapAcc += lapMillis;
+      const lapStr = millisToDisplayString(lapMillis);
+      const accStr = millisToDisplayString(lapAcc);
+      lapLis.push(`<li>${lapStr} (${accStr})</li>`);
+    }
     this._ui.displayTimingData.innerHTML =
       '<ol>'
-      + this._appState.laps
-        .map(millis => millisToDisplayString(millis))
-        .map(displayString => `<li>${displayString}</li>`)
-        .join('\n');
+      + lapLis.join('\n')
       + '</ol>';
 
     if (this._appState.myNum === this._appState.curNum + 1) {
