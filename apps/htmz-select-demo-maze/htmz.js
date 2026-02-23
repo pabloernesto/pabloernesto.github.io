@@ -1,6 +1,8 @@
 function htmz(frame) {
   // no-history start
-  if (frame.contentWindow.location.href === "about:blank") return;
+  if (frame.contentWindow.location.href === "about:blank") {
+    return;
+  }
   // no-history end
 
   // select start
@@ -15,9 +17,9 @@ function htmz(frame) {
   // select end
 
   setTimeout(() => {
-  document
-    .querySelector(frame.contentWindow.location.hash || null)
-    ?.replaceWith(...frame.contentDocument.body.childNodes);
+    document
+      .querySelector(frame.contentWindow.location.hash || null)
+      ?.replaceWith(...frame.contentDocument.body.childNodes);
 
     // no-history start
     frame.remove();
